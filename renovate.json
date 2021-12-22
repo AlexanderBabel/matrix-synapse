@@ -1,5 +1,14 @@
 {
-  "extends": [
-    "config:base"
+  "extends": ["config:base", ":disableRateLimiting"],
+  "prHourlyLimit": 0,
+  "dependencyDashboard": true,
+  "packageRules": [
+    {
+      "matchDatasources": ["docker"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "automergeType": "branch",
+      "automerge": true,
+      "requiredStatusChecks": null
+    }
   ]
 }
