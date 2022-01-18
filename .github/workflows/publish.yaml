@@ -39,9 +39,10 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: alexbabel/matrix-synapse,ghcr.io/alexanderbabel/matrix-synapse
+          images: alexbabel/synapse,ghcr.io/alexanderbabel/synapse
           tags: |
             ${{ steps.version.outputs.version }}
+            latest
 
       - name: Build and push
         uses: docker/build-push-action@v2
