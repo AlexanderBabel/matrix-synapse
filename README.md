@@ -1,3 +1,7 @@
+# IMPORTANT
+
+This project has been moved! It is now available here: [AlexanderBabel/custom-images](https://github.com/AlexanderBabel/custom-images)
+
 # matrix-synapse
 
 This repository contains a customized version of [matrixdotorg/synapse](https://hub.docker.com/r/matrixdotorg/synapse) ([GitHub](https://github.com/matrix-org/synapse)). This image contains two pip packages compared to the upstream version.
